@@ -11,6 +11,6 @@ DaemonSet确保集群中每个（部分）node运行一份pod副本，当node加
 
 可以使用` kubectl get daemonset --namespace=kube-system`命令查看当前集群的daemonset的情况
 
-![1550340254963](.image/Daemon Set.assets/1550340254963.png)
+![1550340254963](.image/DaemonSet.assets/1550340254963.png)
 
 
