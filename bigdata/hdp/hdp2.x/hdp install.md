@@ -150,7 +150,7 @@ drwxr-xr-x 23 root     root        4096 Mar 17 19:38 HDP-UTILS
 
 现在可以通过访问http://192.168.6.219/ambari/查看是否能成功访问
 
-![1552822915581](.image/hdp install.assets/1552822915581.png)
+![1552822915581](.image/hdpinstall.assets/1552822915581.png)
 
 #### 制作本地源
 
@@ -324,19 +324,19 @@ admin/admin
 
 点击`Launch Install Wizard`开始安装
 
-![1552837301110](.image/hdp install.assets/1552837301110.png)
+![1552837301110](.image/hdpinstall.assets/1552837301110.png)
 
 **3.配置集群名字**
 
 例如：sandbox，然后`next`.
 
-![1552837385247](.image/hdp install.assets/1552837385247.png)
+![1552837385247](.image/hdpinstall.assets/1552837385247.png)
 
 **4.选择版本并修改为本地源地址**
 
 先选版本`2.6.3.0`接着选资源库`Use Local Repository`最后在对应的操作系统填写本地源地址.
 
-![1552838160768](.image/hdp install.assets/1552838160768.png)
+![1552838160768](.image/hdpinstall.assets/1552838160768.png)
 
 **5.安装配置**
 
@@ -344,27 +344,27 @@ admin/admin
 
 2.在`Host Registration Infomation`框中填写master节点的`.ssh/id_dsa`文件中的内容.
 
-![1552838676458](.image/hdp install.assets/1552838676458.png)
+![1552838676458](.image/hdpinstall.assets/1552838676458.png)
 
 **6.安装ambari的agent，同时检查系统问题**
 
-![1552839292975](.image/hdp install.assets/1552839292975.png)
+![1552839292975](.image/hdpinstall.assets/1552839292975.png)
 
 **7.选择安装的服务**
 
 > 建议：先只安装HDFS，yarn，MR和zookeeper；因为现在安装太多的服务，只要有一步卡住那么所有步骤都无法再进行下去，建议其他服务后面再添加。
 
-![1552839571723](.image/hdp install.assets/1552839571723.png)
+![1552839571723](.image/hdpinstall.assets/1552839571723.png)
 
 **8.确认安装的服务**
 
-![1552840092572](.image/hdp install.assets/1552840092572.png)
+![1552840092572](.image/hdpinstall.assets/1552840092572.png)
 
 **9.角色分配**
 
 建议nodemanager、regionserver、client全都勾选上，第一个datanode根据主机的磁盘容量选择。
 
-![1552840268092](.image/hdp install.assets/1552840268092.png)
+![1552840268092](.image/hdpinstall.assets/1552840268092.png)
 
 **10.自定义配置**
 
@@ -372,7 +372,7 @@ admin/admin
 
 配置完成点击`next`下一步
 
-![1552841022023](.image/hdp install.assets/1552841022023.png)
+![1552841022023](.image/hdpinstall.assets/1552841022023.png)
 
 没有了红色的即可进行下一步，如遇到warn，可根据提示信息进行修改配置，也可以忽略警告，等装完以后再改。
 
@@ -380,17 +380,17 @@ admin/admin
 
 忘记截图了随便找的一张图，没问题的话点击`Deploy`开始安装
 
-![1552841656738](.image/hdp install.assets/1552841656738.png)
+![1552841656738](.image/hdpinstall.assets/1552841656738.png)
 
 **11.安装和测试**
 
-![1552844276288](.image/hdp install.assets/1552844276288.png)
+![1552844276288](.image/hdpinstall.assets/1552844276288.png)
 
 >  如果这步出问题，找到最下面的问题解决查看是否有类似的，祝你好运~
 
 **12.喜大普奔**
 
-![1552844688119](.image/hdp install.assets/1552844688119.png)
+![1552844688119](.image/hdpinstall.assets/1552844688119.png)
 
 完成安装,第一次装，大概用了7个小时^_^，如果本文给您带来帮助，请给个赞，不胜感激，谢谢。
 
@@ -412,7 +412,7 @@ resource_management.core.exceptions.Fail: Cannot match package for regexp name h
 
 如下图所示：
 
-![1552844402874](.image/hdp install.assets/1552844402874.png)
+![1552844402874](.image/hdpinstall.assets/1552844402874.png)
 
 另外一个解决方案
 

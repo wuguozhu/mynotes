@@ -42,13 +42,13 @@ CONTAINER ID        IMAGE                    COMMAND             CREATED        
 
 6.配置以上信息后，点`Next`到下一步
 
-![1552808594755](.image/rancher install.assets/1552808594755.png)
+![1552808594755](.image/rancherinstall.assets/1552808594755.png)
 
 #### 安装Rancher Agent
 
 将黑色框内的命令拿到准备作为kubernetes的worker节点上去执行
 
-![1552810099455](.image/rancher install.assets/1552810099455.png)
+![1552810099455](.image/rancherinstall.assets/1552810099455.png)
 
 在worker节点上执行以下命令
 
