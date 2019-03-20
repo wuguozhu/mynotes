@@ -33,4 +33,5 @@
 
 ## Rancher
 
-- [Rancher安装](cloud/rancher/rancher install.md)
+- [Rancher安装](cloud/rancher/rancherInstall.md)
+
