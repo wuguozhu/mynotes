@@ -77,8 +77,8 @@ CREATE USER 'ambari'@'%' IDENTIFIED BY 'Bigdata123';
 GRANT ALL PRIVILEGES ON *.* TO 'ambari'@'%';  
 CREATE USER 'ambari'@'localhost' IDENTIFIED BY 'Bigdata123';  
 GRANT ALL PRIVILEGES ON *.* TO 'ambari'@'localhost';  
-CREATE USER 'ambari'@'hadoop1.richstone.com' IDENTIFIED BY 'Bigdata123';  
-GRANT ALL PRIVILEGES ON *.* TO 'ambari'@'hadoop1.richstone.com';  
+CREATE USER 'ambari'@'hadoop1.anan.com' IDENTIFIED BY 'Bigdata123';  
+GRANT ALL PRIVILEGES ON *.* TO 'ambari'@'hadoop1.anan.com';  
 FLUSH PRIVILEGES;  
 source /var/lib/ambari-server/resources/Ambari-DDL-MySQL-CREATE.sql  
 CREATE DATABASE hive;  
@@ -87,8 +87,8 @@ CREATE USER 'hive'@'%' IDENTIFIED BY 'hive';
 GRANT ALL PRIVILEGES ON *.* TO 'hive'@'%';  
 CREATE USER 'hive'@'localhost' IDENTIFIED BY 'hive';  
 GRANT ALL PRIVILEGES ON *.* TO 'hive'@'localhost';  
-CREATE USER 'hive'@'master' IDENTIFIED BY 'hive';  
-GRANT ALL PRIVILEGES ON *.* TO 'hive'@'master';  
+CREATE USER 'hive'@'hadoop1.anan.com' IDENTIFIED BY 'hive';  
+GRANT ALL PRIVILEGES ON *.* TO 'hive'@'hadoop1.anan.com';  
 FLUSH PRIVILEGES;  
 CREATE DATABASE oozie;  
 use oozie;  
@@ -96,8 +96,8 @@ CREATE USER 'oozie'@'%' IDENTIFIED BY 'oozie';
 GRANT ALL PRIVILEGES ON *.* TO 'oozie'@'%';  
 CREATE USER 'oozie'@'localhost' IDENTIFIED BY 'oozie';  
 GRANT ALL PRIVILEGES ON *.* TO 'oozie'@'localhost';  
-CREATE USER 'oozie'@'master' IDENTIFIED BY 'oozie';  
-GRANT ALL PRIVILEGES ON *.* TO 'oozie'@'master';  
+CREATE USER 'oozie'@'hadoop1.anan.com' IDENTIFIED BY 'oozie';  
+GRANT ALL PRIVILEGES ON *.* TO 'oozie'@'hadoop1.anan.com';  
 FLUSH PRIVILEGES;  
 ```
 
