@@ -50,9 +50,9 @@ drwxr-xr-x. 2 root root 4096 10月 21 18:10 nfs
 [root@hadoop1 nfs]# systemctl enable nfs
 ```
 验证
-```
+```shell
 [root@hadoop1]~/k8s# showmount -e
-Export list for hadoop1.richstone.com:
+Export list for hadoop1.anan.com:
 /data/nfs 192.168.6.0/24
 [root@hadoop1]~/k8s#
 ```
