@@ -6,7 +6,7 @@
 
 ## CDH
 
-- [CDH5.X卸载](bigdata/cdh/cdh5/Uninstall cdh 5.x.md)
+- [CDH5.X卸载](bigdata/cdh/cdh5/Uninstallcdh5.x.md)
 
 ## HDP
 
@@ -23,9 +23,9 @@
 ## Kubernetes
 
 - [kubernetes常用命令](cloud/kubernetes/kubernetes常用命令.md)
-- [daemon set](cloud/kubernetes/Daemon Set.md)
+- [daemon set](cloud/kubernetes/DaemonSet.md)
 - [job](cloud/kubernetes/Job.md)
-- [K8s-nfs-pv-pvc-pod实战](cloud/kubernetes/Daemon Set.md)
+- [K8s-nfs-pv-pvc-pod实战](cloud/kubernetes/K8s-nfs-pv-pvc-pod实战.md)
 
 
 
@@ -34,4 +34,3 @@
 ## Rancher
 
 - [Rancher安装](cloud/rancher/rancher install.md)
-
