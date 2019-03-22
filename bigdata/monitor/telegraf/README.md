@@ -1,4 +1,5 @@
-# Alnitak universal monitoring component
+# Telegraf 插件集成
+
 [official website](https://docs.influxdata.com/telegraf/v1.9/) 
 
 **实例版本**
