@@ -6,6 +6,12 @@
 
 ### 1123
 
+[HDP sandbox 安装指引](HDP-sandbox-install.md)
+
+[HDP2.6.3安装](hdpInstall.md)
+
+
+
 
 
 

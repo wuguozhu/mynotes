@@ -6,21 +6,15 @@
 
 ## CDH
 
-[CDH5.X卸载](bigdata/cdh/cdh5/Uninstallcdh5.x.md)
+[CDH5.X版本相关](bigdata/cdh/cdh5/README.md)
 
 ## HDP
 
-[1.HDP2.6.3安装](bigdata/hdp/hdp2.x/hdpInstall.md)
+[HDP2.X版本相关](bigdata/hdp/hdp2.x/README.md)
 
-## Kettle
+## ETL
 
-[1.Kettle调研](bigdata/kettle/1KettleResearch.md)
-
-[2.Kettle安装](bigdata/kettle/2kettleInstall.md)
-
-[3.MySQL数据导入Hive](bigdata/kettle/3UseKettle-mysql2hive.md)
-
-[4.表数据同步与更新](bigdata/kettle/4UseKettle-table-update.md)
+[Kettle8.X版本相关](bigdata/kettle/README.md)
 
 
 

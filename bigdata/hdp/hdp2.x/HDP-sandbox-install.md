@@ -125,3 +125,8 @@ virtualBox下载地址：<https://www.virtualbox.org/wiki/Downloads>，可以根
 ![1553413605494](.image/HDP-sandbox-install.assets/1553413605494.png)
 
 ![1553413647825](.image/HDP-sandbox-install.assets/1553413647825.png)
+
+如果本文对您有所帮助，请支持一个`start`，您的支持是我创作的动力，谢谢
+
+本文参考：
+
