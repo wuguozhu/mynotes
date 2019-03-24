@@ -1,5 +1,11 @@
 项目为本人平时学习和生活记录的点点滴滴，主要为学习和实践过程中的记录，涉及到大数据、云计算等方方面面。
 
+# 通用工具
+
+## [Git](util/README.MD)
+
+
+
 # bigdata
 
 大数据相关其中包括CDH和HDP运维相关学习和实践相关笔记
@@ -14,7 +20,7 @@
 
 ## ETL
 
-[Kettle8.X版本相关](bigdata/kettle/README.md)
+[Kettle8.X版本相关](bigdata/Kettle/README.md)
 
 
 
@@ -28,10 +34,6 @@
 - [daemon set](cloud/kubernetes/DaemonSet.md)
 - [job](cloud/kubernetes/Job.md)
 - [K8s-nfs-pv-pvc-pod实战](cloud/kubernetes/K8s-nfs-pv-pvc-pod实战.md)
-
-
-
-
 
 ## Rancher
 
