@@ -9,9 +9,21 @@
 - Influxdb:`1.7.0`
 - Grafana:`5.2.2`
 
+**监控插件**
+
+[自定义标准输出数据监控](exec/README.md)
+
+[主机性能指标数据监控](hardware/README.md)
+
+[英伟达GPU指标数据监控](nvidia-smi/README.md)
+
+[PostgresSQL指标数据监控](postgres/README.md)
+
+[MySQL指标数据监控](mysql/README.md)
+
 **配置telegraf输出配置**
 
-编辑
+编辑`/etc/telegraf/telegraf.conf`
 
 ```
 [[outputs.influxdb]]
