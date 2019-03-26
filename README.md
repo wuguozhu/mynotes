@@ -2,7 +2,7 @@
 
 # tool
 
-- [版本控制工具-Git](util/README.MD)
+- [版本控制工具-Git](util/README.md)
 
 - [数据监控工具-TIG](bigdata/monitor/README.md)
 
