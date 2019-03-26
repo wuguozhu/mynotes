@@ -8,5 +8,10 @@
 
 [图片来源](https://www.bagevent.com/event/2356935)
 
+- [kubernetes常用命令](kubernetes常用命令.md)
+- [daemon set](DaemonSet.md)
+- [job](Job.md)
+- [K8s-nfs-pv-pvc-pod实战](K8s-nfs-pv-pvc-pod实战.md)
+
 
 

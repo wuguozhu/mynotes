@@ -1,4 +1,4 @@
-# Helm安装
+# 3.Helm安装
 
 ## 安装kubectl
 
