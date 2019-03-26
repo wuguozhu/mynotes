@@ -23,6 +23,13 @@ Telegraf是插件驱动的，有4种不同的插件类型:
 
 4. 输出插件将指标写入不同的目标
 
+目前该插件实现了以下功能：
+标准输出数据监控
+MySQL数据监控
+PostgresSQL数据监控
+英伟达GPU监控
+主机硬件指标监控
+
 
 > [TIG(telegraf,influxdb,grafana)使用方式](./telegraf/)
 
@@ -31,6 +38,11 @@ Telegraf是插件驱动的，有4种不同的插件类型:
 ## Jmxtrans 组件简介
 
 jmxtrans是一个工具，它允许您连接到任意数量的Java虚拟机(jvm)并查询它们的属性，而无需编写任何一行Java代码。属性通过Java管理扩展(JMX)从JVM导出。大多数Java应用程序都通过这个协议提供了它们的统计信息，>并且可以将其添加到任何代码基中，而不需要做很多工作。如果您对代码使用SpringFramework，那么只需向Java类文件中添加一些注释即可
+
+
+目前该插件实现了以下功能：
+
+kafka指标监控
 
 > [JIG(Jmxtrans,influxdb,grafana)使用方式](./jmxtrans/)
 

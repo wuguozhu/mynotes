@@ -48,7 +48,6 @@ git push -u origin develop
 ### Git正确的提交姿势
 
 type用于说明 commit 的类别，只允许使用下面7个标识。
-
 ```sh
 feat：新功能（feature）
 fix：修补bug
@@ -60,7 +59,6 @@ chore：构建过程或辅助工具的变动
 ```
 
 ### Git命令详解
-
 ```sh
 git init    ## 初始化项目
 git clone   ## 克隆项目
@@ -69,13 +67,12 @@ git add     ## 添加需要跟踪的文件
 git commit  ## 提交更新
 git push    ## 推送到远程仓库
 git pull    ## 同步到本地仓库
-git diff    ## 文件对比
+git diff    ## 文件or 分支对比
 git checkout## 切换or新建分支
 git merge   ## 合并"分支"
 git log     ## 历史日志(提交记录)
 git reset   ## 版本"回退"
 ```
-
 以上命令详细实践将在下面列出.
 
 如果本文对您有所帮助，请给个`start`不胜感激，谢谢！
@@ -84,7 +81,7 @@ git reset   ## 版本"回退"
 
 `git init`
 
-```sh
+```
 [root@hadoop1]~/sell# git init
 Initialized empty Git repository in /root/sell/.git/
 [root@hadoop1]~/sell# ll -a
