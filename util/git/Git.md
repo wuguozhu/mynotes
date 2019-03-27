@@ -72,6 +72,7 @@ git checkout## 切换or新建分支
 git merge   ## 合并"分支"
 git log     ## 历史日志(提交记录)
 git reset   ## 版本"回退"
+git reflog  ## 回到删除的未来版本
 ```
 以上命令详细实践将在下面列出.
 
