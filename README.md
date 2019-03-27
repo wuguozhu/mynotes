@@ -2,17 +2,23 @@
 
 # tool
 
-- [版本控制工具-Git](util/README.md)
-
+- [版本控制工具-Git](util/git/README.md)
+- [依赖管理工具-Maven]()
 - [数据监控工具-TIG](bigdata/monitor/README.md)
+- [持续集成工具-CICD]()
+- [项目管理和敏捷开发]()
 
 # bigdata
 
 大数据相关其中包括CDH和HDP运维相关学习和实践相关笔记
 
 - [CDH5.X版本相关](bigdata/cdh/cdh5/README.md)
-
 - [HDP2.X版本相关](bigdata/hdp/hdp2.x/README.md)
+- [Flume开发实例]()
+- [HDFS源码阅读]()
+- [Kylin深入实践]()
+- [Spark深入实践]()
+- [Hive]()
 
 # etl
 
