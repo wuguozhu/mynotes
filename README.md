@@ -3,10 +3,10 @@
 # tool
 
 - [版本控制工具-Git](util/git/README.md)
-- [依赖管理工具-Maven]()
+- [依赖管理工具-Maven](util/maven/README.md)
 - [数据监控工具-TIG](bigdata/monitor/README.md)
-- [持续集成工具-CICD]()
-- [项目管理和敏捷开发]()
+- [持续集成工具-CICD](util/devops/README.md)
+- [项目管理和敏捷开发](util/manager/README.md)
 
 # bigdata
 
@@ -14,11 +14,11 @@
 
 - [CDH5.X版本相关](bigdata/cdh/cdh5/README.md)
 - [HDP2.X版本相关](bigdata/hdp/hdp2.x/README.md)
-- [Flume开发实例]()
-- [HDFS源码阅读]()
-- [Kylin深入实践]()
-- [Spark深入实践]()
-- [Hive]()
+- [Flume开发实例](bigdata/flume/README.md)
+- [HDFS源码阅读](bigdata/hdfs/README.md)
+- [Kylin深入实践](bigdata/kylin/README.md)
+- [Spark深入实践](bigdata/spark/README.md)
+- [Hive数据仓库实践](bigdata/hive/README.md)
 
 # etl
 
