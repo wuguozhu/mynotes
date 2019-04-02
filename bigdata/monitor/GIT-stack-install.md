@@ -187,7 +187,7 @@ sslcacert=/etc/pki/tls/certs/ca-bundle.crt
 然后通过`yum`命令安装Grafana 。
 
 ```sh
-$ sudo yum install grafana
+$ sudo yum install grafana -y
 ```
 
 #### 离线安装
