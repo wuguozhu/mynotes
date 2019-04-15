@@ -17,6 +17,7 @@
 大数据相关其中包括CDH和HDP运维相关学习和实践相关笔记
 
 - [CDH5.X版本相关](bigdata/cdh/cdh5/README.md)
+- [CDH6.X版本相关](bigdata/cdh/cdh6/README.md)
 - [HDP2.X版本相关](bigdata/hdp/hdp2.x/README.md)
 - [Flume开发实例](bigdata/flume/README.md)
 - [HDFS源码阅读](bigdata/hdfs/README.md)
