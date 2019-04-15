@@ -7,8 +7,8 @@
 ## 1.安装之前
 
 - [1.1Cloudera Manager的存储空间规划](https://www.cloudera.com/documentation/enterprise/latest/topics/cm_ig_reqs_space.html#concept_tjd_4yc_gr)
-- [1.2配置网络名称](https://www.cloudera.com/documentation/enterprise/latest/topics/configure_network_names.html#configure_network_names)
-- [1.3禁用防火墙](https://www.cloudera.com/documentation/enterprise/latest/topics/install_cdh_disable_iptables.html#install_cdh_disable_iptables)
+- [1.2配置网络名称](1.2configureNetworkNames.md)
+- [1.3禁用防火墙](1.3disableIptables.md)
 - [1.4设置SELinux模式](https://www.cloudera.com/documentation/enterprise/latest/topics/install_cdh_disable_selinux.html#install_cdh_disable_selinux)
 - [1.5启用NTP服务](https://www.cloudera.com/documentation/enterprise/latest/topics/install_cdh_enable_ntp.html#install_cdh_enable_ntp)
 - [1.6在Hue主机上安装Python 2.7](https://www.cloudera.com/documentation/enterprise/latest/topics/install_python_27.html#install_python_27)
