@@ -191,7 +191,7 @@ rm -rf /bin/oozie
 rm -rf /bin/spark-*
 rm -rf /bin/sqoop*
 rm -rf /bin/yarn
-rm -rf  /usr/bin/zookeeper-*
+rm -rf /usr/bin/zookeeper-*
 rm -rf /var/lib/flume-ng
 rm -rf /var/lib/hadoop-*
 rm -rf /var/lib/impala
