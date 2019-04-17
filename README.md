@@ -24,7 +24,7 @@
 - [Kylin深入实践](bigdata/kylin/README.md)
 - [Spark深入实践](bigdata/spark/README.md)
 - [Hive数据仓库实践](bigdata/hive/README.md)
-- [坑蒙拐骗]()
+- [坑蒙拐骗](bigdata/interview.md)
 
 # etl
 
