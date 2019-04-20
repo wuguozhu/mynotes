@@ -42,6 +42,10 @@ Bulid操作是构建一个Cube指定的时间区间的数据，Kylin是基于预
 
 ### Step7:计算生成 base cuboid数据文件（Build Base Cuboid）
 
+首先清楚Base Cuboid是什么：假如一个Cube有四个维度A,B,C,D 那么这四种维度的所有可能组合就是Base Cuboid，类似于在查询中select count(1) from table group by A,B,C,D 这个查询结果的个数就是Base Cuboid的成员数。也是通过MR任务完成的，输入的是第一步中的输出文件。
+
+### Step8:计算第N层的Cuboid文件（Build N-Dimension Cuboid）
+
 该流程是由多个步骤组成，逐层算法的处理过程，步骤的数量是根据维度组合的Cuboid总数决定的。每一步都使用前一步的输出作为输入，然后去除某个维度进行聚合，生成一个子cuboid。例如，对于cuboid ABCD，去除维度A可以获得cuboid BCD，去除维度B可以获得cuboid ACD等。
 
 ![image-20190421055353913](.image/kylinbuildanalyze.assets/image-20190421055353913-5797233.png)
