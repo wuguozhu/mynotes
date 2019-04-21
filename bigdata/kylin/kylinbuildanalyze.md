@@ -106,3 +106,7 @@ drwxr-xr-x   - root supergroup          0 2018-06-30 13:16 /kylin/kylin_metadata
 ### Step13:清理中间表 （Hive Cleanup）
 
 将之前生成的临时中间表删除。
+
+
+
+本文转载自：http://bigdata-star.com/archives/2030

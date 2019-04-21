@@ -133,3 +133,7 @@ Kylin以Key-Value的方式将Cube存储到HBase中。HBase的key，也就是Rowk
 6、重写配置
 Kylin 允许在 Cube 级别覆盖部分 kylin.properties 中的配置，你可以在这里定义覆盖的属性。如果你没有要配置的，点击 Next 按钮。
 
+
+
+本文转载自：http://bigdata-star.com/archives/1992
+

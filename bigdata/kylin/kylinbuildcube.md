@@ -56,3 +56,6 @@ Monitor页面会显示当前项目下近期的构建任务。
 
 ![image-20190421053845522](.image/kylinbuildcube.assets/image-20190421053845522-5796325.png)
 
+
+
+本文转载自：http://bigdata-star.com/archives/1992
