@@ -37,6 +37,7 @@
 - [Kubernetes相关](cloud/kubernetes/README.md)
 - [Rancher2.X相关](cloud/rancher/README.md)
 - [Docker相关](cloud/docker/README.md)
+- [Helm 相关](cloud/helm/README.md)
 
 
 
