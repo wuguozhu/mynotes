@@ -18,7 +18,7 @@
   - [数据类型](hivedatatype.md)
   - [数据存储与文件格式](hivedatastorage.md)
 - **4.HiveQL：数据定义**
-  - []()
+  - [HiveQL数据定义](hiveoverview.md)
 - **5.HiveQL：数据操作**
   - [5-1 加载数据（LoadData）]()
   - [5-2 从查询计算结果加载数据(Insert Table Select)]()
