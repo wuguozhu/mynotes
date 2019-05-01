@@ -6,6 +6,7 @@
   - [1-3 课程实践环境说明]()
   - [1-4 实操: Hive/Hadoop预备环境安装]()
 - **2.Hive的基本概念**
+
   - [2-1 Hive的安装部署]()
   - [2-2 Hive的基本架构]()
   - [2-3 启动Hive]()
@@ -13,18 +14,11 @@
   - [2-5 HiveServer与JDBC/ODBC]()
   - [2-6 实操: Hive命令行和ThriftServer基本使用]()
 - **3.数据类型与文件格式**
-  - [3-1 Hive支持的基本数据类型]()
-  - [3-2 Hive支持的集合数据类型]()
-  - [3-3 Hive支持的文件格式与优劣对比]()
+
+  - [数据类型](hivedatatype.md)
+  - [数据存储与文件格式](hivedatastorage.md)
 - **4.HiveQL：数据定义**
-  - [4-1 Hive数据模型]()
-  - [4-2 Database]()
-  - [4-3 Table]()
-  - [4-4 Partition]()
-  - [4-5 自定义存储格式]()
-  - [4-6 自定义表属性]()
-  - [4-7 常用创建/删除/修改表语法]()
-  - [4-8 实操: HQL 创建/删除/修改操作练习]()
+  - []()
 - **5.HiveQL：数据操作**
   - [5-1 加载数据（LoadData）]()
   - [5-2 从查询计算结果加载数据(Insert Table Select)]()
@@ -54,9 +48,16 @@
   - [8-2 分桶（Bucket）]()
   - [8-3 压缩]()
   - [8-4 表Schema变更]()
-- **[9.Hive调优](hiveoptimizer.md)**
+- **9.Hive调优**
+  - [Hive调优](hiveoptimizer.md)
 - **10.Hive新特性与其他**
   - [10-1 Hive on Tez]()
+
   - [10-2 Hive on Spark]()
+
   - [10-3 Hive与HBase集成]()
+
   - [10-4 HCatalog]()
+
+
+### hive权限控制 //TODO
