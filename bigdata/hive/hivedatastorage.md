@@ -2,7 +2,7 @@
 
 1、Hive中所有的数据都存储在 HDFS 中，没有专门的数据存储格式（可支持Text，SequenceFile，ParquetFile等）。
 
-Parquet和ORC是属于列式存储。[几张图看懂列式存储](https://blog.csdn.net/dc_726/article/details/41143175)
+Parquet和ORC是属于列式存储。[几张图看懂列式存储](https://blog.csdn.net/dc_726/article/details/41143175)详细介绍了列式存储的原理和优势。
 
 ![image-20190502030303807](.image/hivedatastorage.assets/image-20190502030303807-6737383.png)
 
@@ -43,3 +43,10 @@ ORCFile<Parquet<RcFile<Textfile<SequenceFile
 hive是读时模式（schema on read），即进行数据查询时进行检查验证。
 
 hive在读取这些数据时，如果数据个数对不上，或者数据类型和模式类型对不上，那么将返回null；总之如果查询时返回的数据集很"奇怪"那么你需要额外留意一下了。
+
+本文参考了一下文章：
+
+摘录来自: [美]Edward Capriolo　Dean Wampler　Jason Rutherglen 著. “Hive编程指南。” 
+
+[Hive数据类型和存储格式](http://bigdata-star.com/archives/1013)
+
