@@ -4,6 +4,7 @@
 - [转：Hadoop解决小文件存储思路](https://mp.weixin.qq.com/s?__biz=MzU3MzgwNTU2Mg==&mid=100000889&idx=1&sn=5a67264409b59329c07eb82483d2bf06&chksm=7d3d42ec4a4acbfa2cdacdd4e571ec34fe09e8dbb0ef9b50694ebbf243633a3b4105d5f680d1#rd)
 - [转：HDFS ACLs访问控制权限(超细粒度权限访问控制)](https://blog.csdn.net/kimsungho/article/details/51418015)
 - [转：Hadoop(CDH)性能优调](http://bihell.com/2016/04/18/hadoop-performance-management/)
+- [转：构建一个跨机房的Hadoop集群，有非常多的技术难点](https://blog.csdn.net/a331685690/article/details/81810911)
 
 
 
@@ -12,7 +13,8 @@
 - [转：一起学Hive\]之十二-Hive SQL的优化](http://lxw1234.com/archives/2015/06/317.htm)
 - [转：Hive 调优总结](https://blog.51cto.com/tianxingzhe/1705565)
 - [转：Hive中跑MapReduce Job出现OOM问题分析及解决](http://itindex.net/detail/51868-hive-%E4%B8%AD%E8%B7%91-mapreduce)
-- 
+
+  
 
 ## Kafka相关
 
