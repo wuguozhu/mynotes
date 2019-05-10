@@ -20,6 +20,7 @@
 - [CDH6.X版本相关](bigdata/cdh/cdh6/README.md)
 - [HDP2.X版本相关](bigdata/hdp/hdp2.x/README.md)
 - [Flume开发实例](bigdata/flume/README.md)
+- [kafka原理解析](bigdata/Kafka/README.md)
 - [HDFS源码阅读](bigdata/hdfs/README.md)
 - [Kylin深入实践](bigdata/kylin/README.md)
 - [Spark深入实践](bigdata/spark/README.md)
