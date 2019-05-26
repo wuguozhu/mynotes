@@ -4,8 +4,6 @@
 
 ## [第2章管理Ambari](https://docs.hortonworks.com/HDPDocuments/Ambari-2.6.2.0/bk_ambari-views/content/ch_administering_ambari_views.html)
 
-### 1123
-
 [HDP sandbox 安装指引](HDP-sandbox-install.md)
 
 [HDP2.6.3安装](hdpInstall.md)
@@ -14,7 +12,9 @@
 
 
 
+# 问题解决
 
+[HDP"xx is not sending heartbeats" 解决方案](notSendingHeartbeats.md)
 
 
 
