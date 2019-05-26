@@ -59,5 +59,10 @@
 
   - [10-4 HCatalog]()
 
-
 ### hive权限控制 //TODO
+
+
+
+[转：ETL架构师面试题](https://www.cnblogs.com/tmeily/p/4593700.html)
+
+[转：关于数据仓库工程师的一般面试题目](https://blog.51cto.com/baoqiangwang/309755)
