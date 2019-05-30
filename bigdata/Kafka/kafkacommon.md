@@ -6,7 +6,7 @@
 bin/kafka-topics.sh --list --zookeeper127.0.0.1:2181
 ps:列出该zookeeper中记录在案的topic列表，只有名字
 
-2查看Topic的分区和副本情况
+2.查看Topic的分区和副本情况
 命令：
 bin/kafka-topics.sh --describe --zookeeper 127.0.0.1:2181  --topic test0
 运行结果：
