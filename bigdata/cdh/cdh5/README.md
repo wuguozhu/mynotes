@@ -10,3 +10,5 @@
 
 [CDH5.X卸载](Uninstallcdh5.x.md)
 
+[Kerberos basics and installing a KDC](https://blog.godatadriven.com/kerberos_kdc_install.html)
+
