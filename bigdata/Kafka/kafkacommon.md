@@ -47,7 +47,7 @@ leader负责读写，broker1、broker2负责从broker0同步信息，平时没�
 
 3创建Topic
 命令：
-bin/kafka-topics.sh --create --topic test0--zookeeper 127.0.0.1:2181 --config max.message.bytes=12800000 --config flush.messages=1 --partitions 5 --replication-factor 1
+bin/kafka-topics.sh --create --topic test_wu --zookeeper 127.0.0.1:2181 --config max.message.bytes=12800000 --config flush.messages=1 --partitions 5 --replication-factor 1
 说明：
 --topic后面的test0是topic的名称
 --zookeeper应该和server.properties文件中的zookeeper.connect一样
