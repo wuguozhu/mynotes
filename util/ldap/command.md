@@ -79,3 +79,37 @@ ldapadd -D "cn=Manager,dc=macro,dc=com" -W -x -f
 ldapsearch -h hadoop0.macro.com -b "dc=macro,dc=com" -D "cn=Manager,dc=macro,dc=com" -W | grep dn
 ```
 
+![1561038652185](.image/command.assets/1561038652185.png)
+
+**查看用户组**
+
+```
+ldapsearch -LLL -x -D 'cn=Manager,dc=macro,dc=com' -w 'macro@201' -b 'dc=macro,dc=com' 'cn=bua'
+```
+
+![1561038621752](.image/command.assets/1561038621752.png)
+
+**删除用户**
+
+```
+ldapdelete -x -D "cn=Manager,dc=macro,dc=com" -W "cn=user_b,ou=Group,dc=macro,dc=com"
+```
+
+![1561038741506](.image/command.assets/1561038741506.png)
+
+**添加用户到已有组**
+
+```
+[root@hadoop0 test]# cat update.ldif
+dn: cn=bua,ou=Group,dc=macro,dc=com
+changetype: modify
+add: memberUid
+memberUid: auser1
+```
+
+添加命令
+
+```
+ldapmodify -x -D "cn=Manager,dc=macro,dc=com" -W -f update.ldif
+```
+
