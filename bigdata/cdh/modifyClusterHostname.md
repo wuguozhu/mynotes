@@ -149,6 +149,10 @@ CM端口（已修改为7183）无法访问则表示停止成功
 
 2.修改kadm5.acl
 
+```
+vim /etc/krberos/krb5kdc/kadm5.acl
+```
+
 ![1562912777434](.image/modifyClusterHostname.assets/1562912777434.png)
 
 3.重新初始化数据库，需要先删除principal文件，再执行create命令
@@ -293,7 +297,39 @@ Valid starting       Expires              Service principal
 
 > 修改为新的主机名
 
-修改Hive的数据库配置信息
+3.修改Hive的数据库配置信息
 
 ![1562917220512](.image/modifyClusterHostname.assets/1562917220512.png)
+
+修改sentry的数据库配置信息
+
+![1562923740027](.image/modifyClusterHostname.assets/1562923740027.png)
+
+保存配置。
+
+3.修改CM中Kerberos配置信息
+
+![1562921576375](.image/modifyClusterHostname.assets/1562921576375.png)
+
+将KDC和KADMIN指向的主机host更改为最新的HOSTNAME，并保存配置。
+
+4.填写cm管理账号
+
+![1562923373685](.image/modifyClusterHostname.assets/1562923373685.png)
+
+5.执行重新生成Keytab
+
+![1562921399397](.image/modifyClusterHostname.assets/1562921399397.png)
+
+![1562923452948](.image/modifyClusterHostname.assets/1562923452948.png)
+
+生成成功
+
+6.进入“管理”->“安全”界面查看集群所有服务的prinicipal账号信息
+
+![1562923557058](.image/modifyClusterHostname.assets/1562923557058.png)
+
+>  注意：重新生成Keytab时需要确保所有服务都是停止状态，这里旧的prinicipal信息也存在，但不影响集群服务使用，如果你有强迫症就是不想看到这些，可以在数据库中将cm库下的CREDENTIALS表数据删除，然后再重新生成
+
+5.启动Cloudera Management Service服务
 
