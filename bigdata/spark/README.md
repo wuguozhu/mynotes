@@ -10,3 +10,5 @@
 
 [spark网络通信-RPC的实现](https://www.jianshu.com/p/7da49e332e70)
 
+[Apache Spark Quick Guide - Troubleshooting](http://www.javawhat.com/showWebsiteContent.do?id=531098)
+
