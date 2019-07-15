@@ -2,6 +2,8 @@
 
 [不要脸的转载：HIVE的十项企业级调优](http://www.zhongruitech.com/624015186.html)
 
+[不要脸的转载：大数据：Hive常用参数调优](https://www.cnblogs.com/ITtangtang/p/7683028.html)
+
 ## Expalin方式
 
 根据语法树，对hive SQL 进行调优，使其用最优方式执行任务。
