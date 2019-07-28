@@ -9,3 +9,4 @@
 - [IntelliJ IDEA For Mac 快捷键](http://wiki.jikexueyuan.com/project/intellij-idea-tutorial/keymap-mac-introduce.html)
 - [MAC高清壁纸](http://wallpaperswide.com/)
 
+- [easy connect for Mac 详细安装教程](https://blog.csdn.net/weixin_43886706/article/details/88170978)
