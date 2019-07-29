@@ -1,6 +1,6 @@
 # 修改启用Kerberos的CDH集群的HOSTNAME
 
-在集群安装初期由于未规范集群HOSTNAME，带来集群管理的不便，现需要将CDH集群的HOSTNAME统一规范化，在修改HOSTNAME的过程中需要注意什么？本篇文章Fayson主要介绍如何修改Kerberos环境下的CDH集群的HOSTNAME。修改集群所有主机的hostname的步骤如下：
+在集群安装初期由于未规范集群HOSTNAME，带来集群管理的不便，现需要将CDH集群的HOSTNAME统一规范化，在修改HOSTNAME的过程中需要注意什么？本篇文章主要介绍如何修改Kerberos环境下的CDH集群的HOSTNAME。修改集群所有主机的hostname的步骤如下：
 
 **内容概述**
 
