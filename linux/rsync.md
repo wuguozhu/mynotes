@@ -11,6 +11,8 @@ rsync的一些功能包括
 - 可以使用rsh，ssh或直接套接字作为传输
 - 支持[匿名rsync](http://dslab.lzu.edu.cn:8080/members/wangbj/wangbaojun/howtos/rsync-mirror-HOWTO/rsync-mirroring02.html)，非常适合镜像
 
+软件原理：[rsync同步机制、过程、工作原理](http://blog.uouo123.com/post/692.html)
+
 ## 语法
 
 ```shell
@@ -41,7 +43,7 @@ rsync [OPTION]... rsync://[USER@]HOST[:PORT]/SRC [DEST]
 ```shell
 -v, --verbose 详细模式输出。 
 -q, --quiet 精简输出模式。 
--c, --checksum 打开校验开关，强制对文件传输进行校验。 
+-c, --checksum 打开校验开关，强制对文件传输进行校验。 使用的是MD4文件校验
 -a, --archive 归档模式，表示以递归方式传输文件，并保持所有文件属性，等于-rlptgoD。 
 -r, --recursive 对子目录以递归模式处理。 
 -R, --relative 使用相对路径信息。 
@@ -101,6 +103,38 @@ rsync [OPTION]... rsync://[USER@]HOST[:PORT]/SRC [DEST]
 -h, --help 显示帮助信息。
 ```
 
+> 现在是9102年，如果版本比较老，请直接使用`rsync --help`查看
+
+## 关于内存使用
+
+关于内存的使用官网是这么回答的"3.0.0之前的Rsync版本始终构建要在开始时传输的整个文件列表，并将其保存在整个运行的内存中。Rsync需要大约100个字节来存储一个文件的所有相关信息，因此（例如）具有800,000个文件的运行将消耗大约80M的内存。-H和--delete进一步增加内存使用量。
+
+3.0.0版本通过不存储特定文件不需要的字段，略微减少了每个文件使用的内存。它还引入了一种增量递归模式，该模式以块的形式构建文件列表，并且只要需要就将每个块保存在内存中。此模式可以显着减少内存使用量，但只有双方都是3.0.0或更高版本才能使用此模式，并且未使用rsync当前在此模式下无法处理的某些选项。"
+
+在我的亲身实践中，我在同一台主机两个磁盘间复制115G大概4万个文件使用的内存和CPU并不算高。
+
+## 关于内存不足
+
+关于内存不足官网是这么回答的"运行rsync时“内存不足”的通常原因是您正在传输大量的文件。文件的大小无关紧要，只有文件的总数。如果内存有问题，首先尝试使用增量递归模式：将双方升级到rsync 3.0.0或更高版本，并避免禁用增量递归的选项（例如，使用 `--delete-delay`而不是`--delete-after`）。如果无法做到这一点，您可以使用`--relative`和/或exclude规则将rsync运行分解为在各个子目录上运行的较小块。"
+
+## 关于rsync和scp的区别
+
+在多年以前我还是个孩子，在一次面试中被人问了rsync和scp的区别我懵逼了，下面就是他们之间的区别
+
+- rsync只对差异文件做更新，可以做增量或全量备份；而scp只能做全量备份。简单说就是rsync只传修改了的部分，如果改动较小就不需要全部重传，所以rsync备份速度较快；默认情况下，rsync通过比较文件的最后修改时间（mtime）和文件的大小（size）来确认哪些文件需要被同步过去。
+- rsync是分块校验+传输，scp是整个文件传输。rsync比scp有优势的地方在于单个大文件的一小部分存在改动时，只需传输改动部分，无需重新传输整个文件。如果传输一个新的文件，理论上rsync没有优势；
+- rsync不是加密传输，而scp是加密传输，使用时可以按需选择。
+
+## 关于文件大小不一样
+
+使用rsync复制的后，检查对比两个目录的文件大小竟然不一样，明明是相同的目录的文件，复制后比复制前文件还大。
+
+![1564644889539](.image/rsync.assets/1564644889539.png)
+
+官网给的回答是这样子的
+
+
+
 ## 使用
 
 基础的 `rsync` 命令很简单
@@ -115,10 +149,33 @@ rsync -av SRC DST
 rsync -ca /var/lib/cdsw/ /data1
 ```
 
+在一次数据迁移中，下面是我的方案
+
+```shell
+date && time rsync -ac --partial --bwlimit 800000 --delete  /data0/backup /data1/backup && date
+```
+
+如果你怕这个程序占用了大量的系统资源可以用下面的办法限制一下，在一次做数据迁移的方案中下面是我的备用方案
+
+```shell
+ionice -c 3 nice -n 12 rsync -ac  --partial --bwlimit 800000 --delete  /data0/backup /data1/backup1
+```
+
+至于`ionice`、`nice` 干嘛用的，自行查阅资料，网上很多-
+
+本文参考：
+
+[[1]官方链接](https://rsync.samba.org/)
+
+[[2]How to use advanced rsync for large Linux backups](https://opensource.com/article/19/5/advanced-rsync)
+
+[3]https://serverfault.com/questions/55560/nice-rsync-on-remote-machine/727567
+
+[4]https://rsync.samba.org/FAQ.html#4
 
 
-其他高级使用可以参考：
 
-[官方链接](https://rsync.samba.org/)
 
-[How to use advanced rsync for large Linux backups](https://opensource.com/article/19/5/advanced-rsync)
+
+
+

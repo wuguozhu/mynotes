@@ -113,3 +113,28 @@ memberUid: auser1
 ldapmodify -x -D "cn=Manager,dc=macro,dc=com" -W -f update.ldif
 ```
 
+**备份与还原**
+
+备份
+
+```shell
+ldapsearch -x -b "dc=163,dc=com" -D "uid=authz,ou=Public,dc=163,dc=com" -w "AzdfD863M4" > ldap.20180626.ldif
+```
+
+参数说明
+
+- `-x`：进行简单的验证
+- `-D`：用来绑定服务器的DN
+- `-w`：绑定DN的密码
+- `-b`：要查询的根节点 authz账号要有`"dc=163,dc=com"`的查询权限
+
+还原
+
+```shell
+ldapadd -x -c -D "cn=admin,dc=163,dc=com" -w "smile" -f ldap.20180626.ldif
+```
+
+参数说明
+
+- `-c`：出错后继续执行程序不终止，默认出错即停止
+- `-f`：从文件内读取信息还原，而不是标准输入 还原的DN最好为管理员账号，至少也要有要LDAP的写入权限
