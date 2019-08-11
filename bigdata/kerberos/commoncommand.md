@@ -19,3 +19,7 @@ xst -k macro.keytab -norandkey macro@MACRO.COM
 kinit -kt hive.keytab hive/hadoop0.macro.com@MACRO.COM
 ```
 
+
+
+[KDC 数据库迁移](https://www.jianshu.com/p/bba8b5360307)
+
