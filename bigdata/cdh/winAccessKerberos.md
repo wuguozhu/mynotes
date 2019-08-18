@@ -6,19 +6,7 @@
 
 2.在Windows下使用kinit测试。
 
-3.通过keytab在Windows下进行kinit操作。
 
-4.配置FireFox。
-
-5.验证服务是否正常访问。
-
-**这篇文档将着重介绍Winodws Server R2下安装及使用Kerberos，并基于以下假设：**
-
-1.CDH环境已搭建并正常运行
-
-2.HDFS、Yarn、HBase、Hive等组件已安装部署
-
-3.集群已完成Kerberos的配置，并正常使用
 
 **以下是对本次测试环境，但不是本操作手册的硬限制：**
 
@@ -100,3 +88,42 @@
 
 4.命令行下初始化
 
+1. 如果发生以下的错误
+
+![1566117475812](.image/winAccessKerberos.assets/1566117475812.png)
+
+解决：提示无法定位到默认域，因此需要使用全`kinit wuguozhu@MACRO.COM`
+
+2.如果发生如下错误
+
+![1566119060704](.image/winAccessKerberos.assets/1566119060704.png)
+
+分析：因为我的环境装java，而且java也有`kinit`等命令，因此如果你的java环境变量再kerberos前面时，当你执行`kinit`时会默认先找到java的`kinit`
+
+解决：将kerberos的环境变量加到java环境变量的前面
+
+![1566119624959](.image/winAccessKerberos.assets/1566119624959.png)
+
+再执行`kinit wuguozhu@MACRO.com`
+
+![1566119955819](.image/winAccessKerberos.assets/1566119955819.png)
+
+5.执行`kdestroy`
+
+在控制台执行`kdestroy`发现kerberos UI的Ticket也被清除了
+
+![1566120058931](.image/winAccessKerberos.assets/1566120058931.png)
+
+![1566120096774](.image/winAccessKerberos.assets/1566120096774.png)
+
+到此kerberos在win上安装结束了，安装这个 东西的用途是当你的hdfs，yarn等hadoop相关的服务开启了Kerberos时需要Kerberos认证才能使用web访问时，就需要安装这个东西才能访问
+
+
+
+> 注意：
+>
+> 1.Windows本地的krb5.ini文件不能直接使用krb5.conf文件更名替换，否则会出现文件格式的问题导致MIT Kerberos客户端无法正常启动。
+>
+> 2.在生成keytab文件时需要加上”-norandkey”参数，否则会导致kinit时密码错误。
+
+如果有疑问，可以到主页找到邮箱给我邮件，欢迎一起讨论学习
