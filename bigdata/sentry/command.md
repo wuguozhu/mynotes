@@ -18,7 +18,7 @@ create role bucrole;
 
 # 授权
 #grant select on table test to role read;
-grant all on database buadb to role buarole;
+grant all on database buadb. to role buarole;
 grant all on database bubdb to role bubrole;
 grant all on database bucdb to role bubrole;
 
